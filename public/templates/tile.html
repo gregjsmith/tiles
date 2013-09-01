@@ -1,0 +1,23 @@
+<div class="container-fluid">
+
+	<div class=page-header> <h1>{{tile.name}}</h1> </div>
+	
+	<div class="row-fluid">
+		<div class="span12">
+			<div ng-repeat="group in tile.groups" class="row-fluid">
+				<div ng-repeat="name in group" class="well row-fluid span4">
+					<h2>
+						{{name.name}}
+					</h2>
+					<div ng-repeat="card in name.cards" class="well alert-success">
+						{{card.title}}
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+	</div>
+
+	<hr>
+
+</div>
